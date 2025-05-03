@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body id="particles-js">
+    <div class="container">
+        <header>
+            <h1 class="header__heading">DevChimp</h1>
+        </header>
+
+        <main>
+            <article>
+                <section class="section">
+                    <h2 class="section__heading">Améliorez votre façon de coder !</h2>
+                    <p class="section__text">Recevez des conseils pro, cours et templates chaque semaine</p>
+                    <form action="./php/process_form.php" method="post" class="section__form form" aria-labelledby="form-title">
+                        <div class="formWrap">
+                            <h3 class="form__heading" id="form-title">Inscrivez-vous à la news letter pour rester informé !</h3>
+                            
+                            <div class="form__doubleInput">
+                                <div class="form__section--double">
+                                    <label class="form__section__label" for="nom">Nom</label>
+                                    <input class="form__section__input" type="text" id="nom" name="nom" placeholder="Ex: Doe" autocomplete="off" required aria-required="true" />
+                                </div>
+                                
+                                <div class="form__section--double">
+                                    <label class="form__section__label" for="prenom">Prénom</label>
+                                    <input class="form__section__input" type="text" id="prenom" name="prenom" placeholder="Ex: John" autocomplete="off" required aria-required="true" />
+                                </div>
+                            </div>
+                            
+                            <div class="form__section--last">
+                                <label class="form__section__label" for="email">Email</label>
+                                <input class="form__section__input" type="email" id="email" name="email" placeholder="Ex: johndoe@mail.com" autocomplete="email" required aria-required="true" aria-describedby="email-help" />
+                                <p id="email-help" class="sr-only">Veuillez entrer une adresse e-mail valide.</p>
+                            </div>
+                            
+                            <div>
+                                <button class="sendBtn" type="submit">Envoyer</button>
+                            </div>
+                        </div>
+                        <div class="glass"></div>
+                    </form>
+                </section>
+            </article>
+        </main>
+    </div>
+    <!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <!-- stats.js lib -->
+    <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>
