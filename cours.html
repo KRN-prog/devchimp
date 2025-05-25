@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Acceuil | DevChimp</title>
+    <title>Cours | DevChimp</title>
     <link rel="stylesheet" href="./style/style.css">
 </head>
 <body>
@@ -19,45 +19,10 @@
             </div>
         </nav>
     </header>
-    <main class="main grid-container">
-        <section class="section__headline catchphrase">
-            <h1 class="section__headline__heading">Construis ton avenir en ligne !</h1>
-            <p class="section__headline__text">Lis nos articles, suis nos cours sur le <span style="color: #E44D26">HTML</span> et applique tes connaissances avec des templates de qualité.</p>
-            <button type="button" class="section__headline__btn">M’inscrire</button>
-        </section>
-        <section class="section__codeBox codebox">
-            <article class="codebox-box">
-                <span class="circle circle-red"></span>
-                <span class="circle circle-yellow"></span>
-                <span class="circle circle-green"></span>
-                <pre class="codebox-box__pre"><code><span class="code-green">#include</span> <span class="code-blue">&lt;iostream&gt;</span><br/><br/>using <span class="code-pink">namespace</span> std<span class="code-red">;</span><br/><span class="code-pink">int</span> <span class="code-blue">main()</span> <span class="code-red">{</span><br/>    <span class="code-red">int</span> <span class="code-yellowOrange">a</span> = 12<span class="code-red">;</span><br/>    <span class="code-red">int</span> <span class="code-yellowOrange">b</span> = 5<span class="code-red">;</span><br/>    <span class="code-yellowOrange">count</span> &lt;&lt; <span class="code-green">"Sum of the numbers is: "</span> &lt;&lt; (<span class="code-yellowOrange">a</span> + <span class="code-yellowOrange">b</span>)<span class="code-red">;</span><br/><br/>    <span class="code-yellowOrange">return</span> 0<span class="code-red">;</span><br/>}<br/><br/><span class="code-pink">boolean</span> <span class="code-blue">isProfessional()</span> <span class="code-red">{</span><br/>     <span class="code-red">return</span> true<span class="code-red">;</span><br/>}
-                </code></pre>
-            </article>
-        </section>
+    <main>
+        <h1>Nos <span>cours</span> pour devenir un <span>développeur</span> <span>PRO</span> ! </h1>
+        <p>Apprenez le développement web avec des cours clairs et pratiques, concu pour allerdroit au but</p>
         <section class="content">
-            <div class="contentBox">
-                <h2 class="contentBox__title">Pourquoi DevChimp ?</h2>
-                <article class="contentBox__article">
-                    <img src="./assets/png/graduate-hat.png" alt="Formations section" width="82px" height="82px" class="contentBox__article__img"/>
-                    <h3 class="contentBox__article__title">Formations</h3>
-                    <p class="contentBox__article__text">Apprenez le développement web avec l’essentiel, rien de superflu.</p>
-                </article>
-
-                <article class="contentBox__article">
-                    <img src="./assets/png/web-design.png" alt="Templates section" width="72px" height="72px" class="contentBox__article__img"/>
-                    <h3 class="contentBox__article__title">Templates</h3>
-                    <p class="contentBox__article__text">Téléchargez de multiples designs et fonctionnalités prêts à l’emploi.</p>
-                </article>
-
-                <article class="contentBox__article">
-                    <img src="./assets/png/newsletter.png" alt="Blog section" width="64px" height="64px" class="contentBox__article__img"/>
-                    <h3 class="contentBox__article__title">Blog</h3>
-                    <p class="contentBox__article__text">Tutos, astuces et bonnes pratiques pour devenir un meilleur dev.</p>
-                </article>
-            </div>
-        </section>
-        <section class="content">
-            <h2 class="contentBox__title">Aperçu des Cours</h2>
             <div class="contentBox">
                 <article class="contentBox__article contentBox__article--cours">
                     <div>
@@ -128,62 +93,9 @@
                 </article>
             </div>
         </section>
-
-        <section class="content">
-            <h2 class="contentBox__title">Templates récents</h2>
-
-            <article class="articleAndTemplate">
-                <a href="#">
-                    <img src="./assets/png/gray.png" alt="Photo de template" />
-                    <div>
-                        <h3 class="articleAndTemplate__title">Template E-commerce - Java & Angular.</h3>
-                    </div>
-                </a>
-            </article>
-
-            <div class="articleAndTemplate--btn">
-                <a href="#" class="section__headline__btn seeAllBtn">Voir tout</a>
-            </div>
-        </section>
-
-        <section class="content">
-            <h2 class="contentBox__title">Articles récents</h2>
-
-            <article class="articleAndTemplate">
-                <img src="./assets/png/gray.png" alt="Photo d'article" />
-                <div>
-                    <h3 class="articleAndTemplate__title">Guide d’introduction à React</h3>
-                </div>
-            </article>
-
-            <div class="articleAndTemplate--btn">
-                <a href="#" class="section__headline__btn seeAllBtn">Voir tout</a>
-            </div>
-        </section>
-
-        <section class="content newsletter">
-            <div class="newsletter__box">
-                <div class="newsletter__box__headingWrap">
-                    <h2 class="newsletter__box__headingWrap__title">Améliorez votre façon de coder !</h2>
-                    <div class="newsletter__box__headingWrap__bar"></div>
-                    <p class="newsletter__box__headingWrap__text">Recevez des conseils pro, cours et templates chaque semaine.</p>
-                </div>
-                <form action="#" class="newsletter-form">
-                    <div class="newsletter__doubleinput">
-                        <label for="prenom" class="sr-only">Prénom</label>
-                        <input type="text" id="prenom" placeholder="Prénom" class="newsletter__doubleinput__input" required="" />
-
-                        <label for="nom" class="sr-only">Nom</label>
-                        <input type="text" id="nom" placeholder="Nom" class="newsletter__doubleinput__input" required="" />
-                    </div>
-                    <div>
-                        <label for="email" class="sr-only">Email</label>
-                        <input type="email" id="email" placeholder="Email" class="newsletter-form__singleInput" />
-                    </div>
-                    <button type="submit" class="newsletter-form__btn">Sign Up</button>
-                </form>
-                <div class="subTic">Subscribe</div>
-            </div>
+        <section>
+            <h2>Vous ne savez pas par où <span>commencer</span> ?</h2>
+            <img src="./assets/png/Stack_to_learn.png" alt="" / >
         </section>
     </main>
     <footer class="footer">
