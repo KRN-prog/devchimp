@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prise de contacte | DevChimp</title>
+    <title>Acceuil | DevChimp</title>
     <link rel="stylesheet" href="./style/style.css">
 </head>
 <body>
@@ -26,161 +26,175 @@
             <button type="button" class="section__headline__btn">M’inscrire</button>
         </section>
         <section class="section__codeBox codebox">
-            <article>
+            <article class="codebox-box">
                 <span class="circle circle-red"></span>
                 <span class="circle circle-yellow"></span>
                 <span class="circle circle-green"></span>
-                <pre><code>#include &lt;iostream&gt;<br/><br/>using namespace std;<br/>int main() {<br/><br/>    int a = 12;<br/>    int b = 5;<br/><br/>    count &lt;&lt; "Sum of the numbers is: " &lt;&lt; (a + b);<br/><br/>    return 0;<br/>}<br/><br/>boolean isProfessional() {<br/>     return true;<br/>}
+                <pre class="codebox-box__pre"><code><span class="code-green">#include</span> <span class="code-blue">&lt;iostream&gt;</span><br/><br/>using <span class="code-pink">namespace</span> std<span class="code-red">;</span><br/><span class="code-pink">int</span> <span class="code-blue">main()</span> <span class="code-red">{</span><br/>    <span class="code-red">int</span> <span class="code-yellowOrange">a</span> = 12<span class="code-red">;</span><br/>    <span class="code-red">int</span> <span class="code-yellowOrange">b</span> = 5<span class="code-red">;</span><br/>    <span class="code-yellowOrange">count</span> &lt;&lt; <span class="code-green">"Sum of the numbers is: "</span> &lt;&lt; (<span class="code-yellowOrange">a</span> + <span class="code-yellowOrange">b</span>)<span class="code-red">;</span><br/><br/>    <span class="code-yellowOrange">return</span> 0<span class="code-red">;</span><br/>}<br/><br/><span class="code-pink">boolean</span> <span class="code-blue">isProfessional()</span> <span class="code-red">{</span><br/>     <span class="code-red">return</span> true<span class="code-red">;</span><br/>}
                 </code></pre>
             </article>
         </section>
         <section class="content">
-            <h2>Pourquoi DevChimp ?</h2>
-            <article>
-                <img src="./assets/png/graduate-hat.png" alt="Formations section" width="82px" height="82px"/>
-                <h3>Formations</h3>
-                <p>Apprenez le développement web avec l’essentiel, rien de superflu.</p>
-            </article>
+            <div class="contentBox">
+                <h2 class="contentBox__title">Pourquoi DevChimp ?</h2>
+                <article class="contentBox__article">
+                    <img src="./assets/png/graduate-hat.png" alt="Formations section" width="82px" height="82px" class="contentBox__article__img"/>
+                    <h3 class="contentBox__article__title">Formations</h3>
+                    <p class="contentBox__article__text">Apprenez le développement web avec l’essentiel, rien de superflu.</p>
+                </article>
 
-            <article>
-                <img src="./assets/png/web-design.png" alt="Templates section" width="72px" height="72px"/>
-                <h3>Templates</h3>
-                <p>Téléchargez de multiples designs et fonctionnalités prêts à l’emploi.</p>
-            </article>
+                <article class="contentBox__article">
+                    <img src="./assets/png/web-design.png" alt="Templates section" width="72px" height="72px" class="contentBox__article__img"/>
+                    <h3 class="contentBox__article__title">Templates</h3>
+                    <p class="contentBox__article__text">Téléchargez de multiples designs et fonctionnalités prêts à l’emploi.</p>
+                </article>
 
-            <article>
-                <img src="./assets/png/newsletter.png" alt="Blog section" width="64px" height="64px"/>
-                <h3>Blog</h3>
-                <p>Tutos, astuces et bonnes pratiques pour devenir un meilleur dev.</p>
-            </article>
+                <article class="contentBox__article">
+                    <img src="./assets/png/newsletter.png" alt="Blog section" width="64px" height="64px" class="contentBox__article__img"/>
+                    <h3 class="contentBox__article__title">Blog</h3>
+                    <p class="contentBox__article__text">Tutos, astuces et bonnes pratiques pour devenir un meilleur dev.</p>
+                </article>
+            </div>
         </section>
         <section class="content">
-            <h2>Aperçu des Cours</h2>
-            <article>
-                <div>
-                    <h3>HTML/CSS</h3>
+            <h2 class="contentBox__title">Aperçu des Cours</h2>
+            <div class="contentBox">
+                <article class="contentBox__article contentBox__article--cours">
                     <div>
-                        <img src="./assets/png/html-5.png" alt="Logo HTML 5" width="26px" height="26px"/>
-                        <img src="./assets/png/css-3.png" alt="Logo CSS 3" width="20px" height="20px"/>
+                        <h3 class="contentBox__article--cours__title">HTML/CSS</h3>
+                        <div class="contentBox__article--cours__img">
+                            <img src="./assets/png/html-5.png" alt="Logo HTML 5" width="26px" height="26px"/>
+                            <img src="./assets/png/css-3.png" alt="Logo CSS 3" width="20px" height="20px"/>
+                        </div>
                     </div>
-                </div>
-                <p>Apprenez à concevoir un site web moderne qui s’adapte à tout type d’écrans.</p>
-                <span>A venir</span>
-            </article>
-
-            <article>
-                <div>
-                    <h3>Javascript</h3>
+                    <p class="contentBox__article--cours__text">Apprenez à concevoir un site web moderne qui s’adapte à tout type d’écrans.</p>
+                    <span class="contentBox__article--cours__comming">A venir</span>
+                </article>
+    
+                <article class="contentBox__article contentBox__article--cours">
                     <div>
-                        <img src="./assets/png/javascript.png" alt="Logo JavaScript" width="20px" height="20px"/>
+                        <h3 class="contentBox__article--cours__title">Javascript</h3>
+                        <div class="contentBox__article--cours__img">
+                            <img src="./assets/png/javascript.png" alt="Logo JavaScript" width="20px" height="20px"/>
+                        </div>
                     </div>
-                </div>
-                <p>Apprenez à dynamiser vos sites web et à interagir avec les utilisateurs.</p>
-                <span>A venir</span>
-            </article>
-
-            <article>
-                <div>
-                    <h3>Java/Spring</h3>
+                    <p class="contentBox__article--cours__text">Apprenez à dynamiser vos sites web et à interagir avec les utilisateurs.</p>
+                    <span class="contentBox__article--cours__comming">A venir</span>
+                </article>
+    
+                <article class="contentBox__article contentBox__article--cours">
                     <div>
-                        <img src="./assets/png/java.png" alt="Logo Java" width="20px" height="20px"/>
-                        <img src="./assets/png/spring.png" alt="Logo Spring boot" width="20px" height="20px"/>
+                        <h3 class="contentBox__article--cours__title">Java/Spring</h3>
+                        <div class="contentBox__article--cours__img">
+                            <img src="./assets/png/java.png" alt="Logo Java" width="20px" height="20px"/>
+                            <img src="./assets/png/spring.png" alt="Logo Spring boot" width="20px" height="20px"/>
+                        </div>
                     </div>
-                </div>
-                <p>Maîtrisez le développement back-end avec pour créer des API robustes.</p>
-                <span>A venir</span>
-            </article>
-
-            <article>
-                <div>
-                    <h3>Angular</h3>
+                    <p class="contentBox__article--cours__text">Maîtrisez le développement back-end avec pour créer des API robustes.</p>
+                    <span class="contentBox__article--cours__comming">A venir</span>
+                </article>
+    
+                <article class="contentBox__article contentBox__article--cours">
                     <div>
-                        <img src="./assets/png/angular.png" alt="Logo Angular" width="22px" height="22px"/>
+                        <h3 class="contentBox__article--cours__title">Angular</h3>
+                        <div class="contentBox__article--cours__img">
+                            <img src="./assets/png/angular.png" alt="Logo Angular" width="22px" height="22px"/>
+                        </div>
                     </div>
-                </div>
-                <p>Développez des applications web performantes et modulaires.</p>
-                <span>A venir</span>
-            </article>
-
-            <article>
-                <div>
-                    <h3>React</h3>
+                    <p class="contentBox__article--cours__text">Développez des applications web performantes et modulaires.</p>
+                    <span class="contentBox__article--cours__comming">A venir</span>
+                </article>
+    
+                <article class="contentBox__article contentBox__article--cours">
                     <div>
-                        <img src="./assets/png/atom.png" alt="Logo React" width="24px" height="24px"/>
+                        <h3 class="contentBox__article--cours__title">React</h3>
+                        <div class="contentBox__article--cours__img">
+                            <img src="./assets/png/atom.png" alt="Logo React" width="24px" height="24px"/>
+                        </div>
                     </div>
-                </div>
-                <p>Apprenez à créer des interfaces dynamiques et réactives.</p>
-                <span>A venir</span>
-            </article>
-
-            <article>
-                <div>
-                    <h3>Git</h3>
+                    <p class="contentBox__article--cours__text">Apprenez à créer des interfaces dynamiques et réactives.</p>
+                    <span class="contentBox__article--cours__comming">A venir</span>
+                </article>
+    
+                <article class="contentBox__article contentBox__article--cours">
                     <div>
-                        <img src="./assets/png/social.png" alt="Logo git" width="22px" height="22px"/>
+                        <h3 class="contentBox__article--cours__title">Git</h3>
+                        <div class="contentBox__article--cours__img">
+                            <img src="./assets/png/social.png" alt="Logo git" width="22px" height="22px"/>
+                        </div>
                     </div>
-                </div>
-                <p>Gérez efficacement votre code avec Git et collaborez sans stress.</p>
-                <span>A venir</span>
-            </article>
-        </section>
-
-        <section class="content">
-            <h2>Templates récents</h2>
-
-            <article>
-                <img src="./assets/png/gray.png" alt="Photo de template" />
-                <div>
-                    <h3>Template E-commerce - Java & Angular.</h3>
-                </div>
-            </article>
+                    <p class="contentBox__article--cours__text">Gérez efficacement votre code avec Git et collaborez sans stress.</p>
+                    <span class="contentBox__article--cours__comming">A venir</span>
+                </article>
+            </div>
         </section>
 
         <section class="content">
-            <h2>Articles récents</h2>
+            <h2 class="contentBox__title">Templates récents</h2>
 
-            <article>
+            <article class="articleAndTemplate">
+                <a href="#">
+                    <img src="./assets/png/gray.png" alt="Photo de template" />
+                    <div>
+                        <h3 class="articleAndTemplate__title">Template E-commerce - Java & Angular.</h3>
+                    </div>
+                </a>
+            </article>
+
+            <div class="articleAndTemplate--btn">
+                <a href="#" class="section__headline__btn seeAllBtn">Voir tout</a>
+            </div>
+        </section>
+
+        <section class="content">
+            <h2 class="contentBox__title">Articles récents</h2>
+
+            <article class="articleAndTemplate">
                 <img src="./assets/png/gray.png" alt="Photo d'article" />
                 <div>
-                    <h3>Guide d’introduction à React</h3>
+                    <h3 class="articleAndTemplate__title">Guide d’introduction à React</h3>
                 </div>
             </article>
+
+            <div class="articleAndTemplate--btn">
+                <a href="#" class="section__headline__btn seeAllBtn">Voir tout</a>
+            </div>
         </section>
 
-        <section class="content">
-            <div>
-                <div>
-                    <h2>Améliorez votre façon de coder !</h2>
-                    <div></div>
-                    <p>Recevez des conseils pro, cours et templates chaque semaine.</p>
+        <section class="content newsletter">
+            <div class="newsletter__box">
+                <div class="newsletter__box__headingWrap">
+                    <h2 class="newsletter__box__headingWrap__title">Améliorez votre façon de coder !</h2>
+                    <div class="newsletter__box__headingWrap__bar"></div>
+                    <p class="newsletter__box__headingWrap__text">Recevez des conseils pro, cours et templates chaque semaine.</p>
                 </div>
-                <form action="#">
-                    <div>
+                <form action="#" class="newsletter-form">
+                    <div class="newsletter__doubleinput">
                         <label for="prenom" class="sr-only">Prénom</label>
-                        <input type="text" id="prenom" placeholder="Prénom" required />
+                        <input type="text" id="prenom" placeholder="Prénom" class="newsletter__doubleinput__input" required="" />
 
                         <label for="nom" class="sr-only">Nom</label>
-                        <input type="text" id="nom" placeholder="Nom" required />
+                        <input type="text" id="nom" placeholder="Nom" class="newsletter__doubleinput__input" required="" />
                     </div>
                     <div>
                         <label for="email" class="sr-only">Email</label>
-                        <input type="email" id="email" placeholder="Email" />
+                        <input type="email" id="email" placeholder="Email" class="newsletter-form__singleInput" />
                     </div>
-                    <button type="submit">Sign Up</button>
+                    <button type="submit" class="newsletter-form__btn">Sign Up</button>
                 </form>
+                <div class="subTic">Subscribe</div>
             </div>
-            <div>Subscribe</div>
         </section>
     </main>
-    <footer>
-        <div>
+    <footer class="footer">
+        <div class="footer--brand">
             <img src="./assets/png/monkey_white.png" alt="DevChimp" width="25.96px" height="25.96px"/>
             <h3>DevChimp</h3>
         </div>
-        <nav>
+        <nav class="footer--nav">
             <div>
-                <h3>À propos</h3>
-                <ul>
+                <h3 class="footer--nav__title">À propos</h3>
+                <ul class="footer--nav__ul">
                     <li><a href="#">Qui sommes-nous ?</a></li>
                     <li><a href="#">Notre mission</a></li>
                     <li><a href="#">Contact</a></li>
@@ -188,8 +202,8 @@
             </div>
 
             <div>
-                <h3>Formations</h3>
-                <ul>
+                <h3 class="footer--nav__title">Formations</h3>
+                <ul class="footer--nav__ul">
                     <li><a href="#">HTML & CSS</a></li>
                     <li><a href="#">JavaScript</a></li>
                     <li><a href="#">React</a></li>
@@ -199,18 +213,24 @@
             </div>
 
             <div>
-                <h3>Ressources</h3>
-                <ul>
+                <h3 class="footer--nav__title">Ressources</h3>
+                <ul class="footer--nav__ul">
                     <li><a href="#">Templates</a></li>
                     <li><a href="#">Blog</a></li>
                 </ul>
             </div>
         </nav>
 
-        <div>
-            <img src="./assets/png/youtube.png" alt="Rejoint nous sur Youtube" />
-            <img src="./assets/png/instagram.png" alt="Abonne toi à notre Instagram" />
-            <img src="./assets/png/tik-tok.png" alt="Vient faire un tour sur Tik-Tok" />
+        <div class="footer--links">
+            <a href="#" target="_blank">
+                <img src="./assets/png/youtube.png" alt="Rejoint nous sur Youtube" />
+            </a>
+            <a href="#" target="_blank">
+                <img src="./assets/png/instagram.png" alt="Abonne toi à notre Instagram" />
+            </a>
+            <a href="#" target="_blank">
+                <img src="./assets/png/tik-tok.png" alt="Vient faire un tour sur Tik-Tok" />
+            </a>
         </div>
     </footer>
 </body>
