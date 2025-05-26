@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./style/style.css">
 </head>
 <body>
-    <header class="header">
+    <header class="header headerPageWidth">
         <div class="header__logoBox">
             <a href="./index.html">
                 <img src="./assets/png/monkey.png" alt="Devchimp" width="55px" height="55px" />
@@ -21,19 +21,102 @@
             </div>
         </nav>
     </header>
-    <main>
-        <section>
+    <main class="pageWidth articleSection">
+        <section class="articleSection__article">
             <article>
-                <h1>What’s New in Angular 18?</h1>
-                <div>
-                    <p>Publié par USERNAME</p><span>°</span><p>5 min de lecture</p><span>°</span><p>Nov 18, 2024</p>
+                <h1 class="blogHeading blogHeading--article">What’s New in Angular 18?</h1>
+                <div class="blogArticle__contentBox__publicationInfo">
+                    <p class="blogArticle__contentBox__publicationInfo__text">Publié par <strong>USERNAME</strong></p>
+                    <span aria-hidden="true">•</span>
+                    <div class="articleInfosBox">
+                        <img src="./assets/png/book.png" alt="" width="13px" height="13px" aria-hidden="true" class="blogArticle__contentBox__publicationInfo__img"/>
+                        <time datetime="PT5M" class="blogArticle__contentBox__publicationInfo__text">5 min de lecture</time>
+                    </div>
+                    <span aria-hidden="true">•</span>
+                    <div class="articleInfosBox">
+                        <img src="./assets/png/calendar.png" alt="" width="11px" height="11px" aria-hidden="true" class="blogArticle__contentBox__publicationInfo__img"/>
+                        <time datetime="2024-11-18" class="blogArticle__contentBox__publicationInfo__text">18 nov. 2024</time>
+                    </div>
                 </div>
-                <img src="" alt="">
+                <img src="./assets/png/Whats-New-in-Angular-18 1.png" alt="" class="imgArticle">
                 <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.</p>
                 <h2>Key highlights of Angular 18</h2>
                 <p>No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure? On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee</p>
                 <p>No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure? On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee</p>
             </article>
+        </section>
+
+        <section class="articleSection__cours">
+            <div class="contentBox contentBox--cours">
+                <h2>Nos Cours</h2>
+                <article class="contentBox__article contentBox__article--cours contentBox__article--cours--page">
+                    <div>
+                        <h3 class="contentBox__article--cours__title contentBox__article--cours__title--cours">HTML/CSS</h3>
+                        <div class="contentBox__article--cours__img">
+                            <img src="./assets/png/html-5.png" alt="Logo HTML 5" width="26px" height="26px"/>
+                            <img src="./assets/png/css-3.png" alt="Logo CSS 3" width="20px" height="20px"/>
+                        </div>
+                    </div>
+                    <p class="contentBox__article--cours__text contentBox__article--cours__text--cours">Apprenez à concevoir un site web moderne qui s’adapte à tout type d’écrans.</p>
+                    <span class="contentBox__article--cours__comming contentBox__article--cours__comming--cours">A venir</span>
+                </article>
+    
+                <article class="contentBox__article contentBox__article--cours contentBox__article--cours--page">
+                    <div>
+                        <h3 class="contentBox__article--cours__title contentBox__article--cours__title--cours">Javascript</h3>
+                        <div class="contentBox__article--cours__img">
+                            <img src="./assets/png/javascript.png" alt="Logo JavaScript" width="20px" height="20px"/>
+                        </div>
+                    </div>
+                    <p class="contentBox__article--cours__text contentBox__article--cours__text--cours">Apprenez à dynamiser vos sites web et à interagir avec les utilisateurs.</p>
+                    <span class="contentBox__article--cours__comming contentBox__article--cours__comming--cours">A venir</span>
+                </article>
+    
+                <article class="contentBox__article contentBox__article--cours contentBox__article--cours--page">
+                    <div>
+                        <h3 class="contentBox__article--cours__title contentBox__article--cours__title--cours">Java/Spring</h3>
+                        <div class="contentBox__article--cours__img">
+                            <img src="./assets/png/java.png" alt="Logo Java" width="20px" height="20px"/>
+                            <img src="./assets/png/spring.png" alt="Logo Spring boot" width="20px" height="20px"/>
+                        </div>
+                    </div>
+                    <p class="contentBox__article--cours__text contentBox__article--cours__text--cours">Maîtrisez le développement back-end avec pour créer des API robustes.</p>
+                    <span class="contentBox__article--cours__comming contentBox__article--cours__comming--cours">A venir</span>
+                </article>
+    
+                <article class="contentBox__article contentBox__article--cours contentBox__article--cours--page">
+                    <div>
+                        <h3 class="contentBox__article--cours__title contentBox__article--cours__title--cours">Angular</h3>
+                        <div class="contentBox__article--cours__img">
+                            <img src="./assets/png/angular.png" alt="Logo Angular" width="22px" height="22px"/>
+                        </div>
+                    </div>
+                    <p class="contentBox__article--cours__text contentBox__article--cours__text--cours">Développez des applications web performantes et modulaires.</p>
+                    <span class="contentBox__article--cours__comming contentBox__article--cours__comming--cours">A venir</span>
+                </article>
+    
+                <article class="contentBox__article contentBox__article--cours contentBox__article--cours--page">
+                    <div>
+                        <h3 class="contentBox__article--cours__title contentBox__article--cours__title--cours">React</h3>
+                        <div class="contentBox__article--cours__img">
+                            <img src="./assets/png/atom.png" alt="Logo React" width="24px" height="24px"/>
+                        </div>
+                    </div>
+                    <p class="contentBox__article--cours__text contentBox__article--cours__text--cours">Apprenez à créer des interfaces dynamiques et réactives.</p>
+                    <span class="contentBox__article--cours__comming contentBox__article--cours__comming--cours">A venir</span>
+                </article>
+    
+                <article class="contentBox__article contentBox__article--cours contentBox__article--cours--page">
+                    <div>
+                        <h3 class="contentBox__article--cours__title contentBox__article--cours__title--cours">Git</h3>
+                        <div class="contentBox__article--cours__img">
+                            <img src="./assets/png/social.png" alt="Logo git" width="22px" height="22px"/>
+                        </div>
+                    </div>
+                    <p class="contentBox__article--cours__text contentBox__article--cours__text--cours">Gérez efficacement votre code avec Git et collaborez sans stress.</p>
+                    <span class="contentBox__article--cours__comming contentBox__article--cours__comming--cours">A venir</span>
+                </article>
+            </div>
         </section>
     </main>
     <footer class="footer">
