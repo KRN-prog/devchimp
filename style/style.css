@@ -29,14 +29,18 @@ body{
     font-size: 24px;
     color: #000000;
     text-decoration: none;
+    transition: color ease .3s;
 }
 .header__navBox__box__link:nth-child(even) {
     margin: 15px;
 }
-.header__navBox__box__link:active, header__navBox__box__link:hover {
+.header__navBox__box__link:active{
     font-size: 24px;
     color: #1a1a1a;
     text-decoration: none;
+}
+.header__navBox__box__link:hover {
+    color: #737373;
 }
 
 
@@ -240,10 +244,16 @@ body{
 }
 
 .articleAndTemplate {
+    position: relative;
     width: 252px;
     height: 309px;
     background: #fff;
     border-radius: 12px;
+    transition: all ease .3s;
+}
+.articleAndTemplate:hover {
+    -webkit-box-shadow: 7px 7px 0px 0px #cccccc; 
+    box-shadow: 7px 7px 0px 0px #cccccc;
 }
 .articleAndTemplate > a {
     text-decoration: none;
@@ -650,6 +660,48 @@ body{
     height: 357px;
     object-fit: cover;
     border-radius: 25px;
+}
+.ourCoursTitle {
+    margin-top: 100px;
+    margin-bottom: 5px;
+    font-size: 30px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+.redirectBox {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.coursBox{
+    transition: box-shadow ease .3s;
+    border-radius: 15px;
+}
+.coursBox--htmlCss:hover {
+    -webkit-box-shadow: 7px 7px 0px 0px #E44D26; 
+    box-shadow: 7px 7px 0px 0px #E44D26;
+}
+.coursBox--JS:hover {
+    -webkit-box-shadow: 7px 7px 0px 0px #FADD10; 
+    box-shadow: 7px 7px 0px 0px #FADD10;
+}
+.coursBox--JavaSpring:hover {
+    -webkit-box-shadow: 7px 7px 0px 0px #6ACD37; 
+    box-shadow: 7px 7px 0px 0px #6ACD37;
+}
+.coursBox--Angular:hover {
+    -webkit-box-shadow: 7px 7px 0px 0px #C3002F; 
+    box-shadow: 7px 7px 0px 0px #C3002F;
+}
+.coursBox--React:hover {
+    -webkit-box-shadow: 7px 7px 0px 0px #30A2FF; 
+    box-shadow: 7px 7px 0px 0px #30A2FF;
+}
+.coursBox--Git:hover {
+    -webkit-box-shadow: 7px 7px 0px 0px #F15F54; 
+    box-shadow: 7px 7px 0px 0px #F15F54;
 }
 
 
