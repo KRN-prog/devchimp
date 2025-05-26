@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Monda:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
 body{
     margin: 0;
     padding: 0;
@@ -8,6 +11,10 @@ body{
 }
 
 
+.headerPageWidth {
+    max-width: 1000px;
+    margin: auto;
+}
 .header {
     width: 90%;
     margin: 15px auto 0 auto;
@@ -36,7 +43,7 @@ body{
 .grid-container {
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: calc(100vh - 105px) auto auto auto auto 50vh;
+    grid-template-rows: calc(100vh - 105px) auto auto auto auto auto;
     gap: 16px;
     padding: 0 16px;
     max-width: 1200px;
@@ -267,10 +274,12 @@ body{
 .newsletter__box {
     position: relative;
     overflow: hidden;
+    margin: 35px 0px 0 0;
     padding: 15px;
     width: calc(630px - 15px);
     height: calc(281px - 15px);
     border: 8px solid #000000;
+    box-shadow: 15px 15px 0px 0px rgba(0,0,0,0.25);
     transform: rotate(-2deg);
 }
 .newsletter__box__headingWrap {
@@ -397,4 +406,186 @@ body{
 }
 .footer--links > a:nth-child(2) > img {
     margin: 0 15px;
+}
+
+
+.templatesSection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 15px;
+}
+.redirect {
+    color: initial;
+    text-decoration: none;
+}
+.articleAndTemplate {
+    flex-basis: calc(25% - 15px);
+}
+.templateImg {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+.templateTitle {
+    margin: 10px 20px;
+    font-size: 15px;
+}
+.templateText {
+    width: 85%;
+    height: 103px;
+    margin: 0 auto;
+    font-size: 14px;
+    white-space: normal;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+}
+
+.coursH1 {
+    width: 95%;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 48px;
+    font-weight: 800;
+}
+.coursH1__cours {
+    color: #FFA500;
+}
+.coursH1__pro {
+    color: #FF4500;
+}
+.coursH1__developpeur {
+    background: linear-gradient(
+        270deg,
+        #007CF0,
+        #00DFD8,
+        #007CF0,
+        #00DFD8
+    );
+    background-size: 300% 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: gradientMove 2s linear infinite;
+}
+.coursP {
+    width: 70%;
+    margin: 25px auto;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    color: #666666;
+}
+.wheretobeginSection {
+    margin-bottom: 75px;
+    text-align: center;
+}
+.wheretobegin {
+    font-family: "Poppins", sans-serif;
+    font-size: 29px;
+    font-weight: 500;
+}
+.wheretobegin__animation {
+    background: linear-gradient(
+        270deg,
+        #FF8A65,
+        #4A90E2,
+        #FF8A65,
+        #4A90E2
+    );
+    background-size: 300% 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: gradientMove 2s linear infinite reverse;
+}
+.tempalteArticlesHeading {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.tempalteArticlesHeading__elements > span:nth-child(even) {
+    margin: 0 15px;
+    cursor: pointer;
+}
+.tempalteArticlesHeading__elements > span {
+    cursor: pointer;
+}
+.active {
+    color: #1E1D1E;
+}
+.inactive {
+    color: #B4B4B4;
+}
+
+.saleSection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 25px;
+}
+.saleSection__imgs {
+    flex-basis: calc(50% - 25px);
+    margin-top: 45px;
+}
+.saleSection__imgs_img {
+    width: 100%;
+}
+.saleSection__imgs__selection {
+    margin-top: 15px;
+    text-align: center;
+}
+.saleSection__imgs__selection > img {
+    width: 20%;
+}
+.saleSection__article {
+    flex-basis: calc(50% - 25px);
+}
+.saleSection__article__title {
+    font-size: 33px;
+}
+.saleSection__article__paragraph {
+    font-size: 22px;
+}
+.saleSection__article__price {
+    display: block;
+    font-size: 40px;
+    font-weight: 800;
+    color: #BF0000;
+}
+.saleSection__article__get {
+    padding: 15px 25px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background: #BF0000;
+    border: none;
+}
+
+.moreTemplatesOrArticles {
+    flex-basis: 100%;
+    margin-top: 50px;
+    font-size: 41px;
+}
+
+
+
+.pageWidth {
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 55px;
+}
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
 }

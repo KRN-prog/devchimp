@@ -7,23 +7,23 @@
     <link rel="stylesheet" href="./style/style.css">
 </head>
 <body>
-    <header class="header">
+    <header class="header headerPageWidth">
         <div class="header__logoBox">
             <img src="./assets/png/monkey.png" alt="Devchimp" width="55px" height="55px" />
         </div>
         <nav class="header__navBox">
             <div class="header__navBox__box">
                 <a href="./cours.html" class="header__navBox__box__link">Cours</a>
-                <a href="#" class="header__navBox__box__link">Templates</a>
-                <a href="#" class="header__navBox__box__link">Blog</a>
+                <a href="./templates.html" class="header__navBox__box__link">Templates</a>
+                <a href="./articles.html" class="header__navBox__box__link">Blog</a>
             </div>
         </nav>
     </header>
-    <main class="main grid-container">
+    <main class="main grid-container pageWidth">
         <section class="section__headline catchphrase">
             <h1 class="section__headline__heading">Construis ton avenir en ligne !</h1>
             <p class="section__headline__text">Lis nos articles, suis nos cours sur le <span style="color: #E44D26">HTML</span> et applique tes connaissances avec des templates de qualité.</p>
-            <button type="button" class="section__headline__btn">M’inscrire</button>
+            <a href="#newsletter"><button type="button" class="section__headline__btn">M’inscrire</button></a>
         </section>
         <section class="section__codeBox codebox">
             <article class="codebox-box">
@@ -161,7 +161,7 @@
             </div>
         </section>
 
-        <section class="content newsletter">
+        <section class="content newsletter" id="newsletter">
             <div class="newsletter__box">
                 <div class="newsletter__box__headingWrap">
                     <h2 class="newsletter__box__headingWrap__title">Améliorez votre façon de coder !</h2>
