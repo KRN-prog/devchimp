@@ -363,11 +363,15 @@ body{
     transform: rotate(43deg);
 }
 
+footer {
+    background: #313131;
+}
 .footer {
+    max-width: 1000px;
     display: flex;
     flex-wrap: wrap;
     padding-bottom: 15px;
-    background: #313131;
+    margin: auto;
 }
 .footer--brand {
     flex-basis: 20%;
@@ -717,5 +721,28 @@ body{
     }
     100% {
         background-position: 100% 50%;
+    }
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 100%;
+    }
+    .codebox {
+        display: none;
+    }
+    .contentBox {
+        gap: 50px;
+        justify-content: space-around;
+    }
+    .contentBox__article {
+        width: calc(50% - 50px);
+        height: 240px;
+    }
+    .contentBox__article__img {
+        width: 52px;
+        height: 52px;
     }
 }
