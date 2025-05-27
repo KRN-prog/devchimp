@@ -605,13 +605,13 @@ footer {
     cursor: pointer;
 }
 .blogArticle__imgBox {
-    flex-basis: 201.81px;
+    flex-basis: 20%;
 }
 .blogArticle__imgBox__img {
     width: 100%;
 }
 .blogArticle__contentBox {
-    flex-basis: calc(90% - 127px);
+    flex-basis: calc(80% - 25px);
 }
 .blogArticle__contentBox__title {
     margin: 0;
@@ -726,7 +726,7 @@ footer {
 
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 999px) and (min-width: 688px) {
     .grid-container {
         grid-template-columns: 100%;
     }
@@ -734,15 +734,124 @@ footer {
         display: none;
     }
     .contentBox {
-        gap: 50px;
+        gap: 20px;
         justify-content: space-around;
     }
     .contentBox__article {
         width: calc(50% - 50px);
         height: 240px;
     }
+    .contentBox__article__text {
+        font-size: 19px;
+    }
     .contentBox__article__img {
         width: 52px;
         height: 52px;
+    }
+    .articleAndTemplate__title {
+        font-size: 25px;
+    }
+    .articleAndTemplate--btn {
+        margin-top: 35px;
+    }
+    .whyDevChimp {
+        width: calc(33% - 20px);
+        height: 220px;
+    }
+    .computer {
+        margin-top: 8px;
+    }
+    .newspaper {
+        margin-top: 11px;
+    }
+
+    .articleAndTemplate {
+        flex-basis: calc(33% - 15px);
+    }
+    .mobileTitle {
+        font-size: 15px;
+    }
+
+    .blogArticle__imgBox {
+        flex-basis: 25%;
+    }
+    .blogArticle__contentBox {
+        flex-basis: calc(75% - 25px);
+    }
+
+    .articleSection {
+        gap: 15px;
+        justify-content: space-around;
+    }
+    .ourCoursTitle {
+        margin-top: 95px;
+        font-size: 23px;
+    }
+    .contentBox--cours {
+        gap: 0;
+    }
+    .articleSection__article {
+        flex-basis: calc(80% - 15px);
+    }
+    .articleSection__cours {
+        flex-basis: calc(20% - 15px);
+    }
+    .contentBox__article--cours--page {
+        width: 100%;
+        height: 140px;
+    }
+    .contentBox__article--cours__title--cours {
+        font-size: 13px;
+    }
+    .contentBox__article--cours__text--cours {
+        font-size: 11px;
+    }
+    .contentBox__article--cours__comming--cours {
+        font-size: 7px;
+    }
+    .contentBox__article--cours__img > img {
+        width: 15px;
+        height: 15px;
+    }
+
+    .saleSection__article__title {
+        margin-top: 40px;
+        font-size: 25px;
+    }
+    .saleSection__article__paragraph {
+        font-size: 15px;
+    }
+    .saleSection__article__price {
+        font-size: 30px;
+    }
+    .saleSection__article__get {
+        padding: 10px 20px;
+        font-size: 15px;
+    }
+
+    .blogMobile {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 687px) {
+    .newsletter__box__headingWrap__title {
+        font-size: 16px;
+    }
+    .newsletter__box__headingWrap__text {
+        font-size: 13px;
+    }
+    .newsletter__doubleinput {
+        flex-wrap: wrap;
+    }
+    .newsletter__doubleinput > input {
+        width: 100%;
+    }
+    .newsletter__doubleinput > input:first-of-type {
+        margin-bottom: 7px;
+    }
+    .newsletter__box {
+        width: 90%;
+        height: auto;
     }
 }
