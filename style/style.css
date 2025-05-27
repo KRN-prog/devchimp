@@ -520,6 +520,7 @@ footer {
 }
 .tempalteArticlesHeading {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: baseline;
 }
@@ -644,7 +645,7 @@ footer {
     flex-basis: calc(30% - 25px);
 }
 .contentBox--cours {
-    justify-content: center;
+    justify-content: end;
 }
 .contentBox__article--cours--page {
     width: 188px;
@@ -835,6 +836,56 @@ footer {
 }
 
 @media screen and (max-width: 687px) {
+    .logo {
+        width: 42px;
+        height: 42px;
+    }
+    .header__navBox__box__link {
+        font-size: 19px;
+    }
+    .grid-container {
+        grid-template-columns: 100%;
+    }
+    .section__headline__heading {
+        font-size: 32px;
+        line-height: normal;
+    }
+    .section__headline__text {
+        font-size: 20px;
+    }
+    .section__headline__btn {
+        font-size: 17px;
+    }
+    .codebox {
+        display: none;
+    }
+    .contentBox {
+        justify-content: space-around;
+    }
+    .contentBox__title {
+        font-size: 23px;
+    }
+    .contentBox__article {
+        margin-bottom: 15px;
+    }
+    .contentBox__article__img:nth-child(1) {
+        width: 54px;
+        height: 54px;
+    }
+    .contentBox__article__img:nth-child(2) {
+        width: 45px;
+        height: 45px;
+        margin-top: 15px;
+    }
+    .contentBox__article__img:nth-child(3) {
+        width: 40px;
+        height: 40px;
+        margin-top: 15px;
+    }
+    .articleAndTemplate {
+        margin: auto;
+    }
+
     .newsletter__box__headingWrap__title {
         font-size: 16px;
     }
@@ -853,5 +904,112 @@ footer {
     .newsletter__box {
         width: 90%;
         height: auto;
+    }
+
+    .footer--brand {
+        order: 2;
+        flex-basis: 50%;
+    }
+    .footer--nav {
+        order: 1;
+        flex-basis: 100%;
+        flex-wrap: wrap;
+    }
+    .footer--nav > div {
+        flex-basis: 100%;
+        text-align: center;
+    }
+    .footer--links {
+        order: 3;
+        flex-basis: 50%;
+    }
+
+    .coursH1 {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 0;
+        font-size: 23px;
+    }
+    .coursP {
+        width: 90%;
+        margin-top: 10px;
+        font-size: 15px;
+    }
+
+    .tempalteArticlesHeading__elements {
+        flex-basis: 100%;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    .tempalteArticlesHeading__elements > span {
+        font-size: 15px;
+    }
+
+    .articleAndTemplate {
+        flex-basis: calc(65% - 15px);
+    }
+
+    .saleSection {
+        gap: 0;
+    }
+    .saleSection__imgs, .saleSection__article {
+        flex-basis: 100%;
+    }
+    .salePrice {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: right;
+    }
+    .salePrice > span {
+        flex-basis: 100%;
+        text-align: end;
+    }
+
+    .blogHeading {
+        font-size: 40px;
+    }
+    .blogArticle {
+        gap: 10px;
+    }
+    .blogArticle__imgBox {
+        flex-basis: 202px;
+        height: 113px;
+        margin: auto;
+    }
+    .blogArticle__contentBox {
+        flex-basis: 100%;
+    }
+
+    .articleSection__article {
+        flex-basis: 100%;
+    }
+    .articleSection__cours {
+        flex-basis: 100%;
+    }
+
+    .ourCoursTitle {
+        flex-basis: 100%;
+        margin-top: 0;
+    }
+    .contentBox__article--cours--page {
+        width: calc(50% - 25px);
+    }
+    .imgArticle {
+        height: 250px;
+    }
+}
+
+
+@media screen and (max-width: 398px) {
+    .blogArticle__contentBox__publicationInfo {
+        gap: 5px;
+    }
+    .blogArticle__contentBox__publicationInfo__text {
+        font-size: 10px;
+    }
+}
+@media screen and (max-width: 415px) {
+    .contentBox__article--cours__img {
+        display: none;
     }
 }
